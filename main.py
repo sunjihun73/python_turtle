@@ -9,11 +9,18 @@ def turtleFunc(name):
 
     myT = turtle.Turtle()
     myT.color('green')
-    myT.shape('turtle')
+    myT.shape("turtle")
+
+    myT2 = turtle.Turtle()
+    myT2.color('red')
+    myT2.shape("turtle")
 
     for i in range(0, 4):
-        myT.forward(300)
+        myT.forward(500)
         myT.right(90)
+        myT2.forward(600)
+        myT2.right(90)
+
 
     turtle.done()
 
