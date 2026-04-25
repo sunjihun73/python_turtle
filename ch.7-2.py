@@ -14,11 +14,13 @@ def main(pName):
     turtle.screensize(swidth, sheight)
 
     shapeList = turtle.getshapes()
+    print(shapeList)
+
     for i in range(0, 100) :
         random.shuffle(shapeList)
         myTurtle = turtle.Turtle(shapeList[0])
         tX = random.randrange(-swidth // 2, swidth // 2)
-        tY = random.randrange(-swidth // 2, swidth // 2)
+        tY = random.randrange(-sheight // 2, sheight // 2)
         r = random.random(); g = random.random(); b = random.random()
         tSize = random.randrange(1,3)
         playerTurtles.append([myTurtle, tX, tY, tSize, r, g, b])
@@ -28,6 +30,7 @@ def main(pName):
         myTurtle.color((tList[4], tList[5], tList[6]))
         myTurtle.pencolor((tList[4], tList[5], tList[6]))
         myTurtle.turtlesize(tList[3])
+        myTurtle.speed(15)
         myTurtle.goto(tList[1], tList[2])
     turtle.done()
 
