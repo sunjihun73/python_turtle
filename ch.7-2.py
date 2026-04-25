@@ -31,6 +31,6 @@ def main(pName):
         myTurtle.goto(tList[1], tList[2])
     turtle.done()
 
-    # 스크립트를 실행하려면 여백의 녹색 버튼을 누릅니다.
-    if __name__ == '__main__':
-        main('sunjihun')
+# 스크립트를 실행하려면 여백의 녹색 버튼을 누릅니다.
+if __name__ == '__main__':
+    main('sunjihun')
