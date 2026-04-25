@@ -8,7 +8,7 @@ playerTurtles = []
 swidth, sheight = 500, 500
 
 #메인 코드 부분
-if __name__ == '__main__':
+def main(pName):
     turtle.title('거북이 리스트 활용')
     turtle.setup(width = swidth +50, height = sheight +50)
     turtle.screensize(swidth, sheight)
@@ -30,3 +30,7 @@ if __name__ == '__main__':
         myTurtle.turtlesize(tList[3])
         myTurtle.goto(tList[1], tList[2])
     turtle.done()
+
+    # 스크립트를 실행하려면 여백의 녹색 버튼을 누릅니다.
+    if __name__ == '__main__':
+        main('sunjihun')
